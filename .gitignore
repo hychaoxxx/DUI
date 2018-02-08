@@ -1,0 +1,7 @@
+# Dependency directories
+node_modules/
+dist/
+public/dist/
+public/.cache/
+.cache/
+.vscode/

@@ -1,0 +1,51 @@
+@import '../../../style/global.less';
+
+.dui-btn {
+  position: relative;
+  display: inline-block;
+  color: @orange;
+  font-size: 14px;
+  border: 1px solid @orange;
+  background: #fff;
+  height: 32px;
+  line-height: 1;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 0 15px;
+  border-radius: 4px;
+  outline: 0;
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+.dui-btn-primary {
+  color: @white;
+  background: @orange;
+}
+
+.dui-btn-dashed {
+  border: 1px dashed @orange;
+}
+
+.dui-btn-danger {
+  color: @white;
+  background: @red;
+}
+
+.dui-btn-lg {
+  height: 40px;
+  font-size: 16px;
+}
+
+.dui-btn-sm {
+  padding: 0 7px;
+  height: 24px;
+}
+
+.dui-btn[disabled] {
+  color: @disabled;
+  background: @sliver;
+  border: 1px solid @gray;
+  cursor: not-allowed;
+}

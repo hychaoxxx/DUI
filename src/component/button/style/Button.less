@@ -17,11 +17,21 @@
   cursor: pointer;
   user-select: none;
   -webkit-tap-highlight-color:rgba(0,0,0,0);
+  transition: background-color .2s ease-out,border-color .2s ease-out;
+  &:active {
+    opacity: .6;
+  }
 }
 
 .dui-btn-primary {
   color: @white;
-  background: @orange;
+  background-color: @orange;
+  &:active {
+    opacity: 1;
+    background-color: @orange-active;
+    border-color: @orange-active;
+    color: hsla(0,0%,100%,.3);
+  }
 }
 
 .dui-btn-dashed {
@@ -31,6 +41,12 @@
 .dui-btn-danger {
   color: @white;
   background: @red;
+  &:active {
+    opacity: 1;
+    background-color: @red-active;
+    border-color: @red-active;
+    color: hsla(0,0%,100%,.3);
+  }
 }
 
 .dui-btn-lg {

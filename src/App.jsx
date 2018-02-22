@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Button from './component/button/button';
-import Modal from './component/modal/Modal';
+import Button from './component/Button/Button';
+import Modal from './component/Modal/Modal';
 
 class App extends React.Component {
   state = {
@@ -53,8 +53,8 @@ class App extends React.Component {
         <Modal
           title="弹窗"
           visible={modalShow}
-          leftText="Cancel"
-          rightText="Ok"
+          leftText="取消"
+          rightText="确定"
           onCancel={handlerModalCancel}
           onOk={handlerModalOk}
         >

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import './style/button.less';
+import './style/Button.less';
 
 export default class Button extends React.Component {
   static defaultProps = {

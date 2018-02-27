@@ -46,7 +46,7 @@ export default class Modal extends React.Component {
     const { children, title, visible, mask, leftText, rightText } = this.props;
 
     return (
-      <div className="dui-modal-main" style={{display: visible ? 'block' : 'none'}}>
+      <div className={classNames({"dui-modal-main": true, "dui-modal-show": visible})}>
         {
           mask ? <div className="dui-modal-mask" onClick={handlerCancel}></div> : null
         }

@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Button from './component/Button/Button';
 import Modal from './component/Modal/Modal';
+import Textarea from './component/Textarea/Textarea';
 
 class App extends React.Component {
   state = {
@@ -29,7 +30,7 @@ class App extends React.Component {
       <div>
         <div>
           <h2>Button</h2>
-          <h3>Size: default</h3>
+          <h3>Size: Default</h3>
           <Button className="demo-btn">Default</Button>
           <Button className="demo-btn" type="primary">Primary</Button>
           <Button className="demo-btn" type="dashed">Dashed</Button>
@@ -41,7 +42,7 @@ class App extends React.Component {
           <Button className="demo-btn" type="dashed" size="large">Dashed</Button>
           <Button className="demo-btn" type="danger" size="large">Danger</Button>
           <Button className="demo-btn" disabled type="primary" size="large">Disabled</Button>
-          <h3>Size: Large</h3>
+          <h3>Size: Small</h3>
           <Button className="demo-btn" size="small">Default</Button>
           <Button className="demo-btn" type="primary" size="small">Primary</Button>
           <Button className="demo-btn" type="dashed" size="small">Dashed</Button>
@@ -62,7 +63,13 @@ class App extends React.Component {
           <p>content...</p>
           <p>content...</p>
         </Modal>
-        <br/><br/><br/><br/><br/><br/>
+        <h2>Textarea</h2>
+        <Textarea
+          defaultValue="哈哈哈哈哈"
+          placeholder="请输入"
+          rows="5"
+          maxLength={10}
+          />
       </div>
     );
   }

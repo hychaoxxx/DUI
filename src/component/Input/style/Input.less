@@ -1,0 +1,42 @@
+@import '../../../style/global.less';
+
+.dui-input-main {
+  // background-color: #fff;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 20px;
+  .dui-input {
+    display: block;
+    flex: 1;
+    background: transparent;
+    font-size: 16px;
+    outline: 0;
+    border: 0;
+  }
+  .dui-input-clear {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: 8px;
+    border-radius: 50%;
+    background-color: @gray;
+    font-style: normal;
+    &::before, &::after {
+      content: '';
+      display: inline-block;
+      width: 70%;
+      height: 2px;
+      background-color: @white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+    &::after {
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+  }
+}

@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Button from './component/Button/Button';
 import Modal from './component/Modal/Modal';
+import Input from './component/Input/Input';
 import Textarea from './component/Textarea/Textarea';
 
 class App extends React.Component {
@@ -27,7 +28,7 @@ class App extends React.Component {
     const {handlerModalShow, handlerModalCancel, handlerModalOk} = this;
     const {modalShow} = this.state;
     return (
-      <div>
+      <div style={{marginLeft: 10, marginRight: 10}}>
         <div>
           <h2>Button</h2>
           <h3>Size: Default</h3>
@@ -59,17 +60,25 @@ class App extends React.Component {
           onCancel={handlerModalCancel}
           onOk={handlerModalOk}
         >
-          <p>content...</p>
-          <p>content...</p>
-          <p>content...</p>
+          <p style={{textAlign: 'center'}}>content...</p>
         </Modal>
         <h2>Textarea</h2>
         <Textarea
-          defaultValue="哈哈哈哈哈"
           placeholder="请输入"
-          rows="5"
-          maxLength={10}
+          rows="3"
+          maxLength={40}
           />
+        <h2>Input</h2>
+        <div style={{background: '#fff'}}>
+          <Input
+            defaultValue="哈哈哈"
+            placeholder="请输入"
+            clearable={true}
+          />
+        </div>
+        <br/>
+        <br/>
+        <br/>
       </div>
     );
   }

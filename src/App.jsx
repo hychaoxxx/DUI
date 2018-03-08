@@ -71,7 +71,6 @@ class App extends React.Component {
         <h2>Input</h2>
         <div style={{background: '#fff'}}>
           <Input
-            defaultValue="哈哈哈"
             placeholder="请输入"
             clearable={true}
           />

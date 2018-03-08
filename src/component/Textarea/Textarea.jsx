@@ -31,7 +31,7 @@ export default class Textarea extends React.Component {
   }
   render() {
     const { handlerChange } = this;
-    const { className, showCounter, maxLength, ...others } = this.props;
+    const { className, showCounter, maxLength, defaultValue, ...others } = this.props;
     const { counterNum } = this.state;
     const cls = classNames({
       'dui-textarea': true,

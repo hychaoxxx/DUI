@@ -42,7 +42,7 @@ export default class Input extends React.Component {
   }
   render() {
     const {handlerChange, handlerClear} = this;
-    const {className, clearable, maxLength, defaultValue, ...others} = this.props;
+    const {children, className, clearable, maxLength, defaultValue, ...others} = this.props;
     const {value} = this.state;
     const cls = classNames({
       'dui-input': true,
